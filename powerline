@@ -1,0 +1,33 @@
+#full artical https://www.tecmint.com/powerline-adds-powerful-statuslines-and-prompts-to-vim-and-bash/
+
+sudo apt install python3-pip
+
+pip3 install git+git://github.com/Lokaltog/powerline
+
+wget https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf
+
+wget https://github.com/powerline/powerline/raw/develop/font/10-powerline-symbols.conf
+
+ wget https://github.com/powerline/powerline/raw/develop/font/10-powerline-symbols.conf
+
+fc-cache -vf /usr/share/fonts/
+mv 10-powerline-symbols.conf /etc/fonts/conf.d/
+
+export TERM=”screen-256color” 
+
+# get the location of installed powerline 
+ pip3 show powerline-status
+
+
+# ~/.bashrc not: change lst line with the location of pwerline from previous command
+powerline-daemon -q
+POWERLINE_BASH_CONTINUATION=1
+POWERLINE_BASH_SELECT=1
+. /usr/local/lib/python2.7/dist-packages/powerline/bindings/bash/powerline.sh
+
+# ~/.vimrc not: change lst line with the location of pwerline from previous command
+
+set  rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim/
+set laststatus=2
+set t_Co=256
+

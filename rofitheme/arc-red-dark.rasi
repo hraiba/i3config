@@ -1,4 +1,9 @@
 /*
+ * Official rofi-themes repository
+ * https://github.com/DaveDavenport/rofi-themes
+ *
+ * rofi theme location: /usr/share/rofi/themes/
+ *
  * ROFI Color theme
  * A red variation of Arc-Dark theme by leofa, based on arc-theme-Red (https://github.com/mclmza/arc-theme-Red)
  * User: wikwg9

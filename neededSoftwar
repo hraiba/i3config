@@ -7,7 +7,7 @@ sudo apt install vim
 #curl
 sudo apt install curl
 
-#arndr change monitors palce and resulation
+#arandr change monitors palce and resulation
 sudo apt install arandr
 
 #font manager 

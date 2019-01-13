@@ -37,7 +37,9 @@ bindsym $mod+Shift+q kill
 
 # Floating windows 
 for_window [class="Gnome-calculator"] floating enable
-
+for_window [class="VirtualBox Manager"] floating enable
+for_window [class="VirtualBox Machine"] floating enable
+for_window [class="Lxappearance"] floating enable
 # start dmenu (a program launcher)
 bindsym $mod+d exec --no-startup-id rofi -show  run
 #bindsym $mod+d exec --no-startup-id  rofi -show run -lines 3  -eh 2 -width 100 -padding 800 -opacity "85" -bw 0 -bc "$bg-color" -bg "$bg-color" -fg "$text-color" -hlbg "$bg-color" -columns 2 -font "SFNS Display 18" -hlfg "#9575cd" 
@@ -184,20 +186,26 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
+bindsym $mod+b bar mode toggle
+
+# exec_always --no-startup-id polybar example
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        status_command i3blocks -c ~/.config/i3/i3blocks.conf 
-	position top
-	colors {
-		background $bg-color
-		separator #757575
-		#                   Border               background           text
-		focused_workspace   $bg-color            $bg-color            $text-color
-		inactive_workspace  $inactive-bg-color   $inactive-bg-color   $inactive-text-color
-		urgent_workspace    $urgent-bg-color     $urgent-bg-color     $text-color
-	}
+#        status_command i3blocks -c ~/.config/i3/i3blocks.conf 
+#	mode toggle
+#	modifier $mod+m 
+#	position top
+#	colors {
+#		background $bg-color
+#		separator #757575
+#		#                   Border               background           text
+#		focused_workspace   $bg-color            $bg-color            $text-color
+#		inactive_workspace  $inactive-bg-color   $inactive-bg-color   $inactive-text-color
+#		urgent_workspace    $urgent-bg-color     $urgent-bg-color     $text-color
+#	}
 }
 
 bindsym $mod+shift+x exec --no-startup-id  i3lock --color "$bg-color"
@@ -229,4 +237,7 @@ smart_gaps on
 #####################
 # Sound - Section ###
 ## ##################
-
+#exec --no-startup-id volumeicon
+bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
+#exec --no-startup-id pulseaudio
+#exec --no-startup-id pa-applet

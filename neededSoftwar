@@ -1,0 +1,48 @@
+#i3 windows manager
+sudo apt-get install i3
+
+#vim editor
+sudo apt install vim
+
+#curl
+sudo apt install curl
+
+#arndr change monitors palce and resulation
+sudo apt install arandr
+
+#font manager 
+sudo apt install font-manager
+
+#file manager 
+sudo apt install ranger
+
+#unzip rar files
+sudo apt install unrar
+
+# wallpaper changer 
+sudo apt install feh
+
+#Lxappearance theme changer
+sudo apt install lxappearance
+
+#theme
+sudo apt install arc-theme  
+
+# rofi dmenu replacment
+sudo apt install rofi
+
+#compton window compositor
+sudo apt isntall compton
+
+#i3blocks
+sudo apt install i3blocks
+
+#alsamixer sound controller
+sudo apt install alsamixer
+
+#volumeicon sound trayicon in i3bar
+sudo apt install volumeicon-alsa
+
+#git 
+sudo apt install git
+

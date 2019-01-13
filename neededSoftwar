@@ -46,3 +46,11 @@ sudo apt install volumeicon-alsa
 #git 
 sudo apt install git
 
+#Fonts 
+#awesome font
+#download deb package
+https://www.ubuntuupdates.org/package/core/cosmic/main/base/fonts-font-awesome
+
+#YosemiteSanFranciscoFont
+https://github.com/supermarin/YosemiteSanFranciscoFont
+
